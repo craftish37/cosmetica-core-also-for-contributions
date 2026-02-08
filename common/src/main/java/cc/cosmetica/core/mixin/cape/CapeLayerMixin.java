@@ -27,7 +27,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 /**
  * Enable partial transparency on capes.
  */
-@Mixin(CapeLayer.class)
+@Mixin(value = CapeLayer.class, priority = 2000)
 public class CapeLayerMixin {
 	@Redirect(
 			method = "submit(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/client/renderer/entity/state/AvatarRenderState;FF)V",
