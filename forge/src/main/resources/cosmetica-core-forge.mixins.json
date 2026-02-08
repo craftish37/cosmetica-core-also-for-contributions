@@ -3,6 +3,7 @@
   "package": "cc.cosmetica.core.forge.mixin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
+  "refmap": "cosmetica-core-forge-refmap.json",
   "client": [
     "PlayerTabOverlayMixin"
   ],
